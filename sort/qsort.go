@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package sort
 
 func quickSort(arr []int, left int, right int) {
 	if left < right {
@@ -41,10 +39,4 @@ func partition(arr []int, left int, right int) int {
 	key = left
 
 	return left
-}
-func main() {
-	arr := []int{4, 7, 8, 9, 1, 1, 4, 5, 5, 3, 11, 23, 54, 93, 65, 33, 43}
-	//partition(arr, 0, len(arr)-1)
-	quickSort(arr, 0, len(arr)-1)
-	fmt.Println(arr)
 }
